@@ -3,9 +3,9 @@
 
 ### Modes
 Vim has three different modes: 
-* **Insert mode:** You write text as in any text editor.
-* **Normal mode:** Normal mode provides you efficient ways to manipulate text.
-* **Visual mode:** Not commonly used.
+* **Insert mode (i):** You write text as in any text editor.
+* **Normal mode (ESC):** Normal mode provides you efficient ways to manipulate text.
+* **Visual mode (v):** Visual mode is a flexible and easy way to select a piece of text for an operator. It is the only way to select a block of text.
 
 At any time you can see which mode you are in by looking in the left-bottom corner of the terminal.
 
@@ -36,6 +36,8 @@ You can also insert text multiple times. For example, an underline of a header m
 
 Use **o** insert a new line below current line and **O** to insert a line above the current line. After the action, Vim will automatically go into **insert mode**.
 
+### Manipulation
+
 Use **x** to delete the current character and **X** to delete the character to the left.
 
 Replace: When you need to replace just one character at the current cursor position, use **r** followed by the character you wish to add.
@@ -43,6 +45,16 @@ Replace: When you need to replace just one character at the current cursor posit
 Delete: **d** is the delete command. You can combine it with numbers and movements. For example, **dw** deletes the first word on the right side, and **3dw** deletes the three coming words to the right side. It also copies the deleted word(s), which can be pasted again using the **p**-key.
 
 Repetition: To repeat the last action, use the **.**-key. 
+
+Undo: To undo the last change you can use the **u**-key.
+
+Tabbing: The best way to tab is to enter **Visual mode**, select the text you wish to tab and click **>** to tab to right, or **<** to tab to left.
+
+Cut: You can cut a line (in normal mode) or multiple lines (in visual mode) by using the **c**-key.
+
+Copy: You can copy a line (in normal mode) or multiple lines (in visual mode) by using the **v**-key.
+ 
+Paste: You can paste cut or copied text by pressing the **p**-key.
 
 ### Search and Find
 
